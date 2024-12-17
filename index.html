@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        function redirectToRandomLink() {
+            const links = [
+                "https://vkvideo.ru/video-50287932_456240614",
+                "https://vkvideo.ru/video-154009929_456239492",
+                "https://vkvideo.ru/video-106586976_456239219",
+                "https://vkvideo.ru/video-38863157_456245312",
+                "https://vkvideo.ru/video-79153897_456239331",
+                "https://vkvideo.ru/video-84440824_456242692",
+                "https://vkvideo.ru/video-73154028_456239678",
+                "https://vkvideo.ru/video229418981_456240374",
+                "https://vkvideo.ru/video-50189302_456265416",
+                "https://vkvideo.ru/video-104917606_456240282",
+                "https://vkvideo.ru/video-94954760_456240498",
+                "https://vkvideo.ru/video-17655734_456240576",
+                "https://vkvideo.ru/video222576646_456241093",
+                "https://vkvideo.ru/video35173401_456239639",
+                "https://vkvideo.ru/video-2000318584_80318584"
+            ];
+            const randomIndex = Math.floor(Math.random() * links.length);
+            window.location.href = links[randomIndex];
+        }
+
+        window.onload = redirectToRandomLink;
+    </script>
+</head>
+<body>
+    <h1>Идет перенаправление...</h1>
+    <p>Если перенаправление не сработало, <a href="#" onclick="redirectToRandomLink()">нажмите сюда</a>.</p>
+</body>
+</html>
